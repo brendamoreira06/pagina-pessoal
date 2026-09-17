@@ -1,0 +1,106 @@
+/* =========================================================
+   Brenda Moreira da Silva — Página Pessoal (versão Tailwind)
+   ========================================================= */
+
+:root {
+  --bg: #f4f6f5;
+  --surface: #ffffff;
+  --text: #10171a;
+  --muted: #4b5b60;
+  --line: #dce3e2;
+  --accent: #0e7c7b;
+  --accent-soft: #d9efed;
+  --accent-2: #c9791f;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b1416;
+  --surface: #121c1f;
+  --text: #e8f1ef;
+  --muted: #93a6a8;
+  --line: #253335;
+  --accent: #3ecfc6;
+  --accent-soft: #17302e;
+  --accent-2: #f0b429;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ---------- Hero chart ---------- */
+.hero__chart path.chart-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hero__chart circle {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.hero__chart circle.point-current {
+  fill: var(--accent-2);
+  stroke: var(--accent-2);
+}
+
+.hero__chart .grid-line {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  border-left: 2px solid var(--line);
+}
+
+.timeline li {
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+}
+
+.timeline li.is-current::before {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+/* ---------- Theme toggle icon ---------- */
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
