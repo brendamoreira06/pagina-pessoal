@@ -4,11 +4,10 @@ Atividade Prática 2 da disciplina **GAC116 - Programação Web**, que consiste 
 
 ## Acesse online
 
-- **Página inicial (com as duas opções):** `https://<seu-usuario>.github.io/<nome-do-repositorio>/`
-- **Versão Bootstrap:** `https://<seu-usuario>.github.io/<nome-do-repositorio>/bootstrap/`
-- **Versão Tailwind CSS:** `https://<seu-usuario>.github.io/<nome-do-repositorio>/outro-framework/`
+- **Página inicial (com as duas opções):** `https://brendamoreira06.github.io/pagina-pessoal/`
+- **Versão Bootstrap:** `https://brendamoreira06.github.io/pagina-pessoal/bootstrap/index.html`
+- **Versão Tailwind CSS:** `https://brendamoreira06.github.io/pagina-pessoal/outro-framework/index.html`
 
-> `<https://github.com/brendamoreira06>` e `<nome-do-repositorio>` 
 
 ## Frameworks utilizados
 
