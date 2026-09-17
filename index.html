@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brenda Moreira da Silva — Página Pessoal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f5; --text: #10171a; --muted: #4b5b60;
+      --line: #dce3e2; --accent: #0e7c7b; --surface: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Inter", sans-serif; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 2rem;
+    }
+    .wrap { max-width: 560px; text-align: left; }
+    p.eyebrow {
+      font-family: "IBM Plex Mono", monospace; font-size: 0.85rem;
+      color: var(--accent); margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-family: "Fraunces", serif; font-weight: 600;
+      font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.1; margin: 0 0 1rem;
+    }
+    p.lead { color: var(--muted); margin: 0 0 2.2rem; max-width: 46ch; }
+    .options { display: grid; gap: 1rem; }
+    .option {
+      display: flex; align-items: center; justify-content: space-between;
+      border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.3rem;
+      text-decoration: none; color: var(--text); background: var(--surface);
+      transition: border-color 0.2s ease;
+    }
+    .option:hover { border-color: var(--accent); }
+    .option strong { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; }
+    .option span { color: var(--muted); font-size: 0.9rem; display: block; margin-top: 0.2rem; }
+    .arrow { color: var(--accent); font-family: "IBM Plex Mono", monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Atividade Prática 2 — GAC116</p>
+    <h1>Brenda Moreira da Silva</h1>
+    <p class="lead">Página pessoal desenvolvida em duas versões, para comparar diferentes frameworks CSS.</p>
+    <div class="options">
+      <a class="option" href="bootstrap/index.html">
+        <div><strong>Versão Bootstrap</strong><span>Interface construída com Bootstrap 5</span></div>
+        <span class="arrow">›</span>
+      </a>
+      <a class="option" href="outro-framework/index.html">
+        <div><strong>Versão Tailwind CSS</strong><span>Interface construída com Tailwind CSS</span></div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
